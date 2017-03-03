@@ -1,0 +1,17 @@
+﻿@using MVCApplication.Models;
+       @model IEnumerable<MovieType>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Movie Genres</h2>
+<ul>
+    @foreach(MovieType m in @Model)
+    {
+        <li>
+            @Html.ActionLink(m.MovieTypeName, "Contact1", "movies", new {id=m.MovieTypeID },null)
+        </li>
+    }
+</ul>
+

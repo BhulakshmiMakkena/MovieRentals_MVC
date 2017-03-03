@@ -1,0 +1,34 @@
+﻿@model MVCApplication.Models.movie
+@{
+    ViewBag.Title = "Random";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Movie Details</h1>
+
+<table>
+    <tr>
+        <td><b>MovieID:</b></td>
+        <td>@Model.MovieId</td>
+
+    </tr>
+    <tr>
+        <td><b>MovieName:</b></td>
+        <td>@Model.MovieName</td>
+        </tr>
+    <tr>
+        <td><b>HeroName:</b></td>
+        <td>@Model.HeroName</td>
+        </tr>
+    <tr>
+        <td><b>HeroinName:</b></td>
+        <td>@Model.HeroinName</td>
+        </tr>
+    <tr>
+        <td><b>DirectorName:</b></td>
+        <td>@Model.DirectorName</td>
+    </tr>
+    
+</table>
+
+@Html.ActionLink("Back to List", "Contact1", new{id=@Model.MovieTypeID})

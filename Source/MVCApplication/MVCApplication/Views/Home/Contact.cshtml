@@ -1,0 +1,17 @@
+﻿@*@model IEnumerable<MVCApplication.Models.movie>
+           @using MVCApplication.Models;*@
+@{
+    ViewBag.Title = "Contact";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+@*<h2>Employee LIst</h2>
+<ul>
+    @foreach(movie mm in @Model)
+    {
+        <li>
+            @Html.ActionLink(mm.MovieName, "Random", new {id=mm.MovieId });
+        </li>
+    }
+</ul>*@
